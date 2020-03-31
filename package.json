@@ -1,5 +1,5 @@
 {
-  "name": "error-patern",
+  "name": "error-pattern",
   "version": "1.0.0",
   "description": "Error pattern exemple with try/catch",
   "main": "index.ts",
