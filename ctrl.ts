@@ -1,7 +1,8 @@
-import { Request, Response, NextFunction } from "express";
+import { Request, Response } from "express";
 import { getUser} from "./logic";
 
-export async function doSomethingWithUser(req: Request, res: Response, next: NextFunction) {
+export async function doSomethingWithUser(req: Request, res: Response): Promise<void> {
+    // eslint-disable-next-line no-useless-catch
     try {
         // do some control code
         const userId = parseInt(req.params.id, 10);

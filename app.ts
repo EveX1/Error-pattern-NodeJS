@@ -5,7 +5,7 @@ import router from'./routes';
 
 const app = express();
 
-function errorCatcher(err: ApiError, req: express.Request, res: express.Response, next: express.NextFunction) {
+function errorCatcher(err: ApiError, _req: express.Request, res: express.Response, next: express.NextFunction): void | express.NextFunction {
     if (!err) return next();
     else {
       log(err);
